@@ -42,8 +42,6 @@ analyze_images.py                    本地图片清单；授权后才可调用�
 
 ## 环境准备
 
-建议继续使用现有环境：
-
 ```powershell
 conda activate qdrant-poc
 cd D:\SYJProject\HongKe\Demos\ai_product_knowledge_assistant
