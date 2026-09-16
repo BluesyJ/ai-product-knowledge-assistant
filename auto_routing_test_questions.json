@@ -1,0 +1,44 @@
+[
+  {
+    "id": "AR01",
+    "category": "简单查找",
+    "question": "Qdrant是什么，在RAG中负责哪一部分？",
+    "expected_points": ["向量数据库", "存储和检索向量", "可以结合Payload过滤", "不负责最终回答"],
+    "reference_source_ids": ["presales-playbook", "customer-objections-faq"]
+  },
+  {
+    "id": "AR02",
+    "category": "简单查找",
+    "question": "Point、Vector和Payload之间是什么关系？",
+    "expected_points": ["Point是基本数据单位", "Vector表示内容特征", "Payload保存业务字段"],
+    "reference_source_ids": ["presales-playbook", "glossary"]
+  },
+  {
+    "id": "AR03",
+    "category": "资料归纳",
+    "question": "Replica和Snapshot有什么区别，各自解决什么问题？",
+    "expected_points": ["Replica是在线副本", "Snapshot是时间点备份", "两者用途不同", "快照不等于完整灾备"],
+    "reference_source_ids": ["snapshot-lab", "cluster-operations"]
+  },
+  {
+    "id": "AR04",
+    "category": "资料归纳",
+    "question": "Qdrant开源版能否用于生产，企业为什么还可能考虑商业方案？",
+    "expected_points": ["开源自建可以用于生产", "部署和运维责任", "支持与服务条件", "不能据现有资料编造套餐"],
+    "reference_source_ids": ["customer-objections-faq", "managed-cloud"]
+  },
+  {
+    "id": "AR05",
+    "category": "综合比较",
+    "question": "客户已经使用pgvector，是否应该迁移到Qdrant？请结合规模、检索需求和运维条件给出判断框架。",
+    "expected_points": ["不一定迁移", "比较数据规模与增长", "比较过滤和检索策略", "考虑现有运维能力", "通过PoC验证"],
+    "reference_source_ids": ["customer-objections-faq", "presales-playbook"]
+  },
+  {
+    "id": "AR06",
+    "category": "综合比较",
+    "question": "如果客户要求数据不离开自有环境，应怎样比较Qdrant的部署选择，并确认方案边界？",
+    "expected_points": ["先确认数据驻留和网络约束", "考虑自建或相应商业部署方式", "区分客户与供应商运维责任", "具体能力和服务按方案核实"],
+    "reference_source_ids": ["customer-objections-faq", "simulated-bank-rag", "managed-cloud"]
+  }
+]

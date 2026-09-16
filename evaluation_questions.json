@@ -1,0 +1,107 @@
+[
+  {
+    "id": "Q01",
+    "category": "产品定义",
+    "question": "Qdrant是什么，在RAG中负责哪一部分？",
+    "expected_points": ["向量数据库", "存储和检索向量", "结合Payload过滤", "不负责最终回答"],
+    "reference_source_ids": ["presales-playbook", "customer-objections-faq"]
+  },
+  {
+    "id": "Q02",
+    "category": "基础能力",
+    "question": "Point、Vector和Payload之间是什么关系？",
+    "expected_points": ["Point是基本数据单位", "Vector表示内容特征", "Payload保存业务字段"],
+    "reference_source_ids": ["presales-playbook", "glossary"]
+  },
+  {
+    "id": "Q03",
+    "category": "检索能力",
+    "question": "为什么有时需要Dense和Sparse混合检索？",
+    "expected_points": ["语义相关", "精确关键词", "结果融合", "是否采用需验证"],
+    "reference_source_ids": ["presales-playbook", "customer-objections-faq"]
+  },
+  {
+    "id": "Q04",
+    "category": "权限边界",
+    "question": "Payload过滤能不能直接替代企业权限系统？",
+    "expected_points": ["不能直接替代", "可信后端强制注入条件", "漏过滤风险"],
+    "reference_source_ids": ["customer-objections-faq", "advanced-filter-learning"]
+  },
+  {
+    "id": "Q05",
+    "category": "选型",
+    "question": "客户已经使用pgvector，是否一定要迁移到Qdrant？",
+    "expected_points": ["不一定", "根据规模、过滤、检索策略和运维需求比较", "需要PoC"],
+    "reference_source_ids": ["customer-objections-faq", "presales-playbook"]
+  },
+  {
+    "id": "Q06",
+    "category": "企业方案边界",
+    "question": "Qdrant开源版能不能用于生产，为什么还可能购买商业方案？",
+    "expected_points": ["开源自建可以用于生产", "部署运维责任", "支持和服务条件", "不能虚构套餐"],
+    "reference_source_ids": ["customer-objections-faq", "managed-cloud"]
+  },
+  {
+    "id": "Q07",
+    "category": "部署与数据驻留",
+    "question": "数据不能离开客户环境时，可以怎样考虑部署？",
+    "expected_points": ["先确认数据与网络约束", "自建或相应商业部署方式", "具体能力按方案核实"],
+    "reference_source_ids": ["customer-objections-faq", "simulated-bank-rag"]
+  },
+  {
+    "id": "Q08",
+    "category": "索引原理",
+    "question": "HNSW为什么快，近似搜索是不是随便猜？",
+    "expected_points": ["分层图导航", "减少比较候选", "召回率与延迟权衡", "不是随机猜测"],
+    "reference_source_ids": ["hnsw-explainer", "hnsw-benchmark"]
+  },
+  {
+    "id": "Q09",
+    "category": "可靠性",
+    "question": "Replica和Snapshot有什么区别？",
+    "expected_points": ["Replica是在线副本", "Snapshot是时间点备份", "快照不等于完整灾备"],
+    "reference_source_ids": ["snapshot-lab", "cluster-operations"]
+  },
+  {
+    "id": "Q10",
+    "category": "成本与性能",
+    "question": "量化是不是一定既省内存又不损失检索效果？",
+    "expected_points": ["不是", "不同量化方式存在精度和延迟权衡", "真实数据验证Recall和P95"],
+    "reference_source_ids": ["quantization-storage", "hnsw-benchmark"]
+  },
+  {
+    "id": "Q11",
+    "category": "客户场景",
+    "question": "制造业质量缺陷场景如何同时利用图片、文字和生产条件？",
+    "expected_points": ["多模态向量", "业务字段过滤", "返回相似历史案例"],
+    "reference_source_ids": ["simulated-manufacturing-multimodal"]
+  },
+  {
+    "id": "Q12",
+    "category": "客户场景",
+    "question": "跨国银行中国区RAG检索方案主要关注哪些问题？",
+    "expected_points": ["数据驻留", "权限进入检索", "统一检索基座", "这是模拟方案"],
+    "reference_source_ids": ["simulated-bank-rag"]
+  },
+  {
+    "id": "Q13",
+    "category": "应用边界",
+    "question": "Qdrant能否直接识别图片、生成向量并完成最终回答？",
+    "expected_points": ["核心是向量存储与检索", "Embedding和大模型属于其他环节", "Cloud Inference需按环境确认"],
+    "reference_source_ids": ["customer-objections-faq"]
+  },
+  {
+    "id": "Q14",
+    "category": "资料不足",
+    "question": "Qdrant企业方案在中国区多少钱，故障必须在几分钟内修复？",
+    "expected_points": ["现有资料不足", "不能编造价格、SLA或响应时间", "需由销售和合同确认"],
+    "reference_source_ids": ["customer-objections-faq"]
+  },
+  {
+    "id": "Q15",
+    "category": "避免夸大",
+    "question": "官方案例中处理了27亿条评论，是否证明任何客户都能达到同样效果？",
+    "expected_points": ["不能", "案例条件不能普遍化", "客户数据、硬件和查询条件需单独验证"],
+    "reference_source_ids": ["reviews-case-analysis", "presales-playbook"]
+  }
+]

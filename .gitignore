@@ -1,0 +1,12 @@
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+*.log
+runs/
+# 本地切片、图片说明缓存和临时目录可能包含内部资料，不进入远程仓库。
+artifacts/

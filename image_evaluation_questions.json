@@ -1,0 +1,42 @@
+[
+  {
+    "id": "trip-text-01",
+    "question": "外滩大会报告认为，为什么智能体安全不能只检查模型回答？",
+    "evidence_type": "text",
+    "expected_points": ["智能体能够调用工具、访问数据和执行操作", "需要检查授权、范围和实际行为"],
+    "reference_source_id": "trip-report-bund-2026",
+    "status": "ready_for_text_retrieval"
+  },
+  {
+    "id": "trip-image-01",
+    "question": "现场关于渗锋的演示图片展示了哪些功能模块、结果字段或交付信息？",
+    "evidence_type": "image",
+    "expected_points": [],
+    "reference_source_id": "trip-report-bund-2026",
+    "status": "caption_ready_retrieval_pending"
+  },
+  {
+    "id": "trip-image-02",
+    "question": "结构化控制流相关图片中有哪些关键控制节点，它们之间是什么关系？",
+    "evidence_type": "image",
+    "expected_points": [],
+    "reference_source_id": "trip-report-bund-2026",
+    "status": "caption_ready_retrieval_pending"
+  },
+  {
+    "id": "trip-mixed-01",
+    "question": "结合现场图片和报告中的个人理解，模型建议与实际执行权限应如何分工？",
+    "evidence_type": "text_and_image",
+    "expected_points": ["模型在指定范围内提出建议", "权限判断和执行控制由模型之外的机制承担"],
+    "reference_source_id": "trip-report-bund-2026",
+    "status": "text_and_caption_ready_retrieval_pending"
+  },
+  {
+    "id": "trip-mixed-02",
+    "question": "身份与审计方案的现场图片展示了哪些组件，这些组件如何支持任务追溯？",
+    "evidence_type": "text_and_image",
+    "expected_points": ["需要关联发起人、任务、授权范围和执行结果"],
+    "reference_source_id": "trip-report-bund-2026",
+    "status": "text_and_caption_ready_retrieval_pending"
+  }
+]
