@@ -176,3 +176,7 @@ python -m unittest discover -s tests -v
 ```
 
 完整演示顺序见[docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md)。
+
+## 相关项目
+
+[TrueFoundry 销售问数演示](https://github.com/BluesyJ/tfy-sales-demo) · [项目导航](https://github.com/BluesyJ/tfy-sales-demo/blob/main/PROJECTS.md)
